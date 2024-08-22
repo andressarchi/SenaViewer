@@ -123,13 +123,15 @@ public class Main {
 
                     break;
                 case 6:
-                    System.out.println("Has seleccionado Report Today.");
+                    System.out.println("Has seleccionado Report .");
 
                     break;
                 case 7:
-                    System.out.println("Saliendo...");
+                    System.out.println("Has seleccionado Report Today.");
+
                     break;
                 case 8:
+                    System.out.println("Saliendo...");
                     break;
                 default:
                     System.out.println("Opción inválida. Por favor, seleccione una opción entre 1 y 7.");

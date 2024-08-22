@@ -48,7 +48,7 @@ public class metodosBooks {
         System.out.println("8. ver todo");
         System.out.print("Ingrese su opción: ");
         int opcion = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+
 
         System.out.println("\nDetalles de los libros:");
         for (Book book : books) {
@@ -86,7 +86,7 @@ public class metodosBooks {
                     break;
                 default:
                     System.out.println("Opción inválida.");
-                    return; // Salir del método si la opción es inválida
+                    return;
             }
             System.out.println(); // Línea en blanco entre libros
         }

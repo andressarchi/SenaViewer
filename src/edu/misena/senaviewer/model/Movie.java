@@ -7,7 +7,7 @@ public class Movie {
     private String creator;
     private String duration;
     private int year;
-    private int viewed;
+    private boolean viewed;
     private int timeViewed;
 
     public Movie(String title, String genre, String creator, String duration, int year) {
@@ -43,7 +43,7 @@ public class Movie {
         return year;
     }
 
-    public int getViewed() {
+    public boolean getViewed() {
         return viewed;
     }
 
@@ -76,7 +76,7 @@ public class Movie {
         this.year = year;
     }
 
-    public void setViewed(int viewed) {
+    public void setViewed(boolean viewed) {
         this.viewed = viewed;
     }
 

@@ -7,7 +7,7 @@ public class Chapter {
     private String title;
     private String duration;
     private Date year;
-    private int viewed;
+    private boolean viewed;
     private int timeViewed;
     private int sessionNumber;
 
@@ -34,7 +34,7 @@ public class Chapter {
         return year;
     }
 
-    public int getViewed() {
+    public boolean getViewed() {
         return viewed;
     }
 
@@ -63,7 +63,7 @@ public class Chapter {
         this.year = year;
     }
 
-    public void setViewed(int viewed) {
+    public void setViewed(boolean viewed) {
         this.viewed = viewed;
     }
 

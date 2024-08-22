@@ -6,13 +6,13 @@ public class Serie {
     private String title;
     private String genre;
     private String creator;
-    private String duration;
-    private Date year;
-    private int viewed;
+    private int duration;
+    private String year;
+    private boolean viewed;
     private int timeViewed;
     private int sessionQuantity;
 
-    public Serie(String title, String genre, String duration) {
+    public Serie(String title, String genre, int duration) {
         this.title = title;
         this.genre = genre;
         this.duration = duration;
@@ -35,15 +35,15 @@ public class Serie {
         return creator;
     }
 
-    public String getDuration() {
+    public int getDuration() {
         return duration;
     }
 
-    public Date getYear() {
+    public String getYear() {
         return year;
     }
 
-    public int getViewed() {
+    public boolean getViewed() {
         return viewed;
     }
 
@@ -72,15 +72,15 @@ public class Serie {
         this.creator = creator;
     }
 
-    public void setDuration(String duration) {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
 
-    public void setYear(Date year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
-    public void setViewed(int viewed) {
+    public void setViewed(boolean viewed) {
         this.viewed = viewed;
     }
 

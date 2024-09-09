@@ -23,12 +23,15 @@ public class metodosMovie {
         String creator = scanner.nextLine();
 
         System.out.println("Ingrese la duración:");
-        String duration = scanner.nextLine();
+        int duration = scanner.nextInt();
 
         System.out.println("Ingrese el año:");
         int year = scanner.nextInt();
 
-        Movie newMovie = new Movie(title, genre, creator, duration, year);
+        System.out.println("¿Cuántos minutos has tardado en vertela ?");
+        int tiempo = scanner.nextInt();
+
+        Movie newMovie = new Movie(title, genre, creator, duration,tiempo);
 
 
         System.out.println("Ingrese el Id:");
@@ -40,10 +43,6 @@ public class metodosMovie {
         scanner.nextLine(); // Consumir el salto de línea residual
         newMovie.setViewed(visto);
 
-        System.out.println("¿Cuántos minutos has tardado en vertela ?");
-        int tiempo = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea residual
-        newMovie.setTimeViewed(tiempo);
 
         movies.add(newMovie);
         System.out.println("Película agregada con éxito");

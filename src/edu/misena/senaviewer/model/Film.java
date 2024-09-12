@@ -69,4 +69,16 @@ public class Film {
         this.viewed = viewed;
     }
 
+    @Override
+    public String toString() {
+        return "Film{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", genre='" + genre + '\'' +
+                ", creator='" + creator + '\'' +
+                ", duration=" + duration +
+                ", year=" + year +
+                ", viewed=" + viewed +
+                '}' ;
+    }
 }

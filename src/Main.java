@@ -1,3 +1,9 @@
+import edu.misena.senaviewer.model.Book;
+import edu.misena.senaviewer.model.Magazine;
+import edu.misena.senaviewer.model.Movie;
+import edu.misena.senaviewer.model.Serie;
+import edu.misena.senaviewer.model.Chapter;
+
 import java.util.Scanner;
 
 public class Main {
@@ -7,11 +13,7 @@ public class Main {
         int opcion2 = 0;
 
         // Instancias de los métodos para cada categoría
-        metodosMovie movieMethods = new metodosMovie();
-        metodosSeries seriesMethods = new metodosSeries();
-        metodosBooks booksMethods = new metodosBooks(); // Instancia de metodos
-        metodosChapter chapterMethods = new metodosChapter();
-        metodosMagazine magazineMethods = new metodosMagazine();
+
 
         while (opcion != 8) {
             System.out.println("¿A qué sección quieres entrar?");
@@ -37,10 +39,10 @@ public class Main {
                     opcion2 = scanner.nextInt();
                     switch (opcion2) {
                         case 1:
-                            movieMethods.verMovies();
+                            Movie.verMovies();
                             break;
                         case 2:
-                            movieMethods.addMovie();
+                            Movie.addMovie();
                             break;
                         default:
                             System.out.println("Opción inválida.");
@@ -56,10 +58,10 @@ public class Main {
                     scanner.nextLine(); // Consumir el salto de línea pendiente
                     switch (opcion2) {
                         case 1:
-                            seriesMethods.verSeries();
+                            Serie.verSeries();
                             break;
                         case 2:
-                            seriesMethods.addSerie();
+                            Serie.addSerie();
                             break;
                         default:
                             System.out.println("Opción inválida.");
@@ -74,10 +76,10 @@ public class Main {
                     opcion2 = scanner.nextInt();
                     switch (opcion2) {
                         case 1:
-                            booksMethods.verBooks();
+                            Book.viewBooks();
                             break;
                         case 2:
-                            booksMethods.addBook();
+                            Book.addBook();
                             break;
                         default:
                             System.out.println("Opción inválida.");
@@ -93,10 +95,10 @@ public class Main {
                     scanner.nextLine(); // Consumir el salto de línea pendiente
                     switch (opcion2) {
                         case 1:
-                            magazineMethods.verMagazines();
+                            Magazine.verMagazines();
                             break;
                         case 2:
-                            magazineMethods.addMagazine();
+                            Magazine.addMagazine();
                             break;
                         default:
                             System.out.println("Opción inválida.");
@@ -111,10 +113,10 @@ public class Main {
                     opcion2 = scanner.nextInt();
                     switch (opcion2) {
                         case 1:
-                            chapterMethods.verChapters();
+                            Chapter.verChapters();
                             break;
                         case 2:
-                            chapterMethods.addChapter();
+                            Chapter.addChapter();
                             break;
                         default:
                             System.out.println("Opción inválida.");
